@@ -5,6 +5,12 @@
 .DS_Store
 Desktop.ini
 
+# Secrets for CircuitPython
+secrets.py
+
+#my stupid aliases
+dot.*
+
 # Thumbnail cache files
 ._*
 Thumbs.db
