@@ -12,7 +12,7 @@ alias -- -="cd -"
 alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/projects"
+alias gh="cd ~/git"
 alias g="git"
 
 # Detect which `ls` flavor is in use
@@ -23,6 +23,9 @@ else # macOS `ls`
 	colorflag="-G"
 	export LSCOLORS='BxBxhxDxfxhxhxhxhxcxcx'
 fi
+
+# list serial devices
+alias devices= "ls -al /dev/cu.\*"
 
 # List all files colorized in long format
 alias l="ls -lF ${colorflag}"
