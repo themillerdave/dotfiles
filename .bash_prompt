@@ -2,7 +2,7 @@
 
 # Shell prompt based on the Solarized Dark theme.
 # Screenshot: http://i.imgur.com/EkEtphC.png
-# Heavily inspired by @necolas’s prompt: https://github.com/necolas/dotfiles
+# Heavily inspired by necolas’s prompt: https://github.com/necolas/dotfiles
 # iTerm → Profiles → Text → use 13pt Monaco with 1.1 vertical spacing.
 
 if [[ $COLORTERM = gnome-* && $TERM = xterm ]] && infocmp gnome-256color >/dev/null 2>&1; then
@@ -28,7 +28,7 @@ prompt_git() {
 		echo '(unknown)')";
 
 	# Early exit for Chromium & Blink repo, as the dirty check takes too long.
-	# Thanks, @paulirish!
+	# Thanks, paulirish!
 	# https://github.com/paulirish/dotfiles/blob/dd33151f/.bash_prompt#L110-L123
 	repoUrl="$(git config --get remote.origin.url)";
 	if grep -q 'chromium/src.git' <<< "${repoUrl}"; then
